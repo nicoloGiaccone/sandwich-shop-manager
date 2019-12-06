@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE module PUBLIC "-//Checkstyle//DTD Checkstyle Configuration 1.3//EN"
+        "https://checkstyle.org/dtds/configuration_1_3.dtd">
+<module name="Checker">
+    <module name="TreeWalker">
+        <module name="BooleanExpressionComplexity">
+        </module>
+        <module name="CyclomaticComplexity">
+        </module>
+        <module name="MethodLength"/>
+        <module name="EmptyCatchBlock">
+            <property name="commentFormat" value="Causa:"/>
+            <property name="exceptionVariableName" value="empty"/>
+        </module>
+        <module name="AvoidStarImport"/>
+        <module name="IllegalImport"/>
+        <module name="NeedBraces">
+            <property name="allowSingleLineStatement" value="true"/>
+        </module>
+        <module name="LineLength"/>
+    </module>
+    <module name="FileLength"/>
+    <module name="FileTabCharacter">
+        <property name="eachLine" value="true"/>
+    </module>
+    <module name="Header">
+        <property name="header" value="////////////////////////////////////////////////////////////////////\n// Nicolò Giaccone 1171208\n////////////////////////////////////////////////////////////////////"/>
+        <property name="fileExtensions" value="java"/>
+    </module>
+</module>
